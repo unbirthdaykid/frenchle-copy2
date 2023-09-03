@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAS PROJECT FRENCH PESTLE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://scribens.fr/API/scribens_api.js?lang=fr" data-name="scribens"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/home.html" id="navbar__logo"><img src="images/CAS.png" alt="pic">FRENCHLE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/listening.html" class="navbar__links">
+                        Listening
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/reading.html" class="navbar__links">
+                        Reading
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/writing.html" class="navbar__links">
+                        Writing
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/speaking.html" class="navbar__links">
+                        Speaking
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Writing Comprehension Practices</h1>
+        <p>Here you will find a writing comprehension practice test</p>
+    </div>
+            
+    
+    <div class="img-container">
+        <img src="images/write.jpg" alt="Description of the image">
+    </div>
+    
+    <div class="center-box">
+        <h4>Tips for Writing Comprehension</h4>
+        <p>Here is the tips box. You will see information on this.</p>
+    </div>
+    
+    
+    <div class="nav-bar">
+        <div class="nav-item" onclick="changeTab(0)">Test 1</div>
+        <div class="nav-item" onclick="changeTab(1)">Test 2</div>
+        <div class="nav-item" onclick="changeTab(2)">Test 3</div>
+        <div class="nav-item" onclick="changeTab(3)">Test 4</div>
+        <div class="nav-item" onclick="changeTab(4)">Test 5</div>
+        <div class="nav-item" onclick="changeTab(5)">Test 6</div>
+    </div>
+    
+    <div class="tab" id="tab0">
+        <h2>Production écrite #1: Lettre Formelle</h2>
+        <div class="content">
+          <p>
+            Vous vivez en France dans une zone piétonne du centre-ville. Le maire de votre ville a décidé 
+            d’ouvrir certaines des rues de cette zone à la circulation des autobus pendant la journée. Comme 
+            représentant(e) de votre immeuble, vous écrivez une lettre au maire pour contester cette décision 
+            en justifiant votre point de vue.
+            <br><br><br>
+          </p>
+        </div>
+    
+        <div class="toggleContainer" data-tab="1" onclick="toggleMarkscheme(this)">
+          <span class="arrow">&#8964;</span>
+          <span class="toggleText">Toggle Markscheme</span>
+        </div>
+      
+        <div class="markscheme" data-tab="1" style="display: none;">
+          <p>
+            <br>
+            <h3>Format d'une lettre formelle</h3>
+            À l’examen, pendant l’épreuve de production écrite du DELF B1 ou du DELF B2 vous devrez peut-être faire une lettre formelle.
+            Bien que la consigne ne vous l’indique pas clairement, ce sera à vous de comprendre quel type de courrier vous devrez faire. Pour cela, demandez-vous à qui vous écrivez : à un directeur ? À un employeur ? Au maire du village ? Au courrier des lecteurs d’un journal / magazine ? Si la réponse est oui, dans ce cas faites une lettre formelle !
+            La lettre formelle n’est pas très difficile, mais elle doit répondre à des normes strictes que vous devrez mémoriser et reproduire.
+            <br><br><br>
+            <div class="img-container">
+              <img src="images/lettreformelle.png" alt="Description of the image">
+            </div>
+            <br>
+            <h3>Les Elements Essentiels</h3>
+            1. <strong>Coordonnées de l’expéditeur (à gauche)</strong> : votre nom, prénom, adresse, code postal et ville (email en option). N’écrivez pas monsieur ou madame pour vous-même.
+            <br><br>
+            2. <strong>Coordonnées du destinataire (à droite)</strong> : civilité (Monsieur, Madame), nom, titre/fonction (le maire, la directrice, etc.), adresse, code postal et ville.
+            <br><br>
+            3. <strong>Lieu et date (à droite)</strong> : l’endroit où vous écrivez la lettre (et non là où vous habitez bien que ce soit souvent la même chose) et la date au format « 29 août 2018 » et non 29/08/2018.
+            <br><br>
+            4. <strong>Objet (à gauche)</strong> : le but (= le sujet) du courrier. Il n’y a pas de sujet.
+            <br><br>
+            5. <strong>Formule d’appel (à gauche)</strong> : civilité, titre/fonction du destinataire.
+            <br><br>
+            6. <strong>Introduction</strong> : j’annonce pourquoi j’écris la lettre.
+            <br><br>
+            7. <strong>Corps de la lettre</strong> : développement et conclusion.
+            <br><br>
+            8. <strong>Formule de politesse</strong> : remercier et prendre congé de votre destinataire. (voir l’article sur les formules de politesse)
+            <br><br>
+            9. <strong>Signature (à droite)</strong> : le nom de la personne qui écrit la lettre (même nom que dans les coordonnées de l’expéditeur).
+            <br><br><br><br>
+            <h3>Lettre D'exemple</h3>
+            Alice Gao <br>
+            555 Rue de Franchle<br>
+            France, K1J 4U6<br>
+            exemple.exemple@gmail.com<br>
+            (666)666-6666<br>
+            2 Novembre, 2023
+            <br><br>
+            Monsieur le Maire,<br>
+            Mairie de France,<br>
+            [City Address],<br>
+            [City Postal Code]
+            <br><br><br>
+            <strong>Objet : </strong> Contestation de la décision d'ouvrir certaines rues de la zone piétonne à la circulation des autobus
+            <br><br><br>
+            Monsieur le Maire,
+            <br><br>
+            Permettez-moi de vous exprimer mon profond désaccord à propos de la récente décision d'ouvrir certaines rues de notre zone piétonne du centre-ville à la circulation des autobus pendant la journée. En tant que représentant(e) de notre immeuble et habitant(e) de cette zone, je tiens à partager les préoccupations de nombreux résidents.
+            <br><br>
+            Tout d'abord, cette zone piétonne a été établie dans le but de promouvoir un environnement sûr, paisible et convivial pour les résidents et les visiteurs. L'ouverture aux autobus pourrait compromettre cet objectif en introduisant du bruit, de la pollution et un sentiment d'insécurité, notamment pour les enfants et les personnes âgées.
+            <br><br>
+            De plus, cette décision pourrait entraîner une dégradation de la qualité de l'air et un impact négatif sur la santé des habitants. Les niveaux de pollution atmosphérique pourraient augmenter, mettant en danger la santé respiratoire de chacun.
+            <br><br>
+            Enfin, l'ouverture aux autobus pourrait décourager l'utilisation des modes de transport durables tels que la marche et le vélo, qui sont essentiels pour réduire la congestion et l'empreinte carbone de notre ville.
+            <br><br>
+            Je vous prie donc instamment de reconsidérer cette décision et d'explorer des alternatives qui préservent l'intégrité de notre zone piétonne. Peut-être pourrions-nous envisager des horaires spécifiques pour la circulation des autobus afin de minimiser les perturbations et les impacts négatifs.
+            <br><br>
+            Je vous remercie de prendre en considération nos préoccupations et de travailler ensemble pour préserver le caractère unique et la qualité de vie de notre centre-ville.
+            <br><br><br>
+            Cordialement,
+            <br><br>
+            Alice Gao.
+          </p>
+        </div>
+        <br><br>
+        
+      </div>
+    
+      <div class="tab" id="tab1">
+        <h2>Production écrite #2: Lettre Formelle</h2>
+        <div class="content">
+          <p>
+            Vous travaillez dans une entreprise francophone. Votre collègue, qui occupe une fonction similaire, est partie en congé maternité et aucun remplacement n’est prévu. Vous écrivez à votre directeur en lui expliquant votre situation. Vous rappelez vos fonctions. Vous lui faites part de vos inquiétudes quant à votre charge de travail. Vous exposez votre point de vue dans un texte argumenté et illustré d’exemples précis. (250 mots environ).
+            <br><br><br>
+          </p>
+        </div>
+    
+        <div class="toggleContainer" data-tab="2" onclick="toggleMarkscheme(this)">
+          <span class="arrow">&#8964;</span>
+          <span class="toggleText">Toggle Markscheme</span>
+        </div>
+      
+        <div class="markscheme" data-tab="2" style="display: none;">
+          <p>
+            <br>
+            <h3>Lettre D'exemple</h3>
+            Christina Zhao <br>
+            Directeur de Frenchle<br>
+            555 Rue de Franchle<br>
+            2 Novembre, 2023<br>
+            <br>
+            À l'attention de M. [Director's Name],<br>
+            Directeur de [Company Name],<br>
+            <br><br>
+            <strong>Objet</strong> : Situation de surcharge de travail suite au congé maternité de ma collègue
+            <br><br><br>
+            Je me permets de vous adresser la présente lettre afin de vous informer de ma situation actuelle au sein de l'entreprise suite au départ en congé maternité de ma collègue occupant une fonction similaire à la mienne. Je tiens à réitérer mon dévouement envers l'entreprise tout en exprimant mes inquiétudes quant à la charge de travail accrue que je fais face actuellement.
+            <br><br>
+            En tant que directeur de Frenchle, mes fonctions impliquent la gestion de [mention your responsibilities]. Cependant, avec le départ en congé maternité de ma collègue, la répartition des tâches s'est déséquilibrée, et je me retrouve maintenant responsable de la majeure partie des responsabilités de notre équipe. Les échéances et les demandes sont de plus en plus nombreuses, ce qui impacte non seulement ma capacité à exécuter efficacement mes tâches, mais également la qualité de mon travail.
+            <br><br>
+            Je souhaite souligner que cette surcharge de travail a des répercussions potentielles sur la qualité de service que nous offrons à nos clients. Des retards dans la réponse aux demandes et une diminution de l'attention portée aux détails pourraient nuire à notre réputation. De plus, cela a également un impact sur ma propre satisfaction au travail et ma capacité à maintenir un équilibre entre vie professionnelle et vie personnelle.
+            <br><br>
+            Je comprends les contraintes budgétaires de l'entreprise et le fait qu'un remplacement à temps plein pour ma collègue puisse ne pas être envisageable. Cependant, je tiens à suggérer quelques solutions qui pourraient alléger la charge de travail, telles que la réaffectation temporaire de certaines tâches non essentielles à d'autres membres de l'équipe ou l'éventualité de recourir à un stagiaire pour soutenir les activités.
+            <br><br>
+            En conclusion, je demeure engagé(e) envers l'entreprise et je suis déterminé(e) à faire face à cette situation avec professionnalisme. Cependant, je crois qu'il est essentiel d'explorer des solutions pour maintenir la qualité de notre travail et mon bien-être au sein de l'équipe. Je vous remercie de prendre en considération mes préoccupations et mes suggestions.
+            <br><br><br>
+            Cordialement,
+            <br><br>
+            Christina Zhao.
+          </p>
+        </div>
+        <br><br>
+      </div>
+    
+      <div class="tab" id="tab2">
+        <h2>Production écrite #3: Lettre Formelle</h2>
+        <div class="content">
+          <p>
+            Votre enfant vous annonce qu’il/elle souhaite arrêter l’apprentissage du français à l’école parce qu’il/elle n’apprécie pas les méthodes de son professeur. Vous écrivez à celui-ci afin de lui faire part de votre avis de façon claire mais diplomatique. Vous lui expliquez votre façon d’envisager l’éducation et en particulier l’apprentissage d’une langue étrangère et vous lui proposez de le rencontrer. Vous exposez votre point de vue dans un texte argumenté et illustré d’exemples précis. (250 mots environ).
+            <br><br><br>
+          </p>
+        </div>
+    
+        <div class="toggleContainer" data-tab="3" onclick="toggleMarkscheme(this)">
+          <span class="arrow">&#8964;</span>
+          <span class="toggleText">Toggle Markscheme</span>
+        </div>
+      
+        <div class="markscheme" data-tab="3" style="display: none;">
+          <p>
+            <br>
+            <h3>Lettre D'exemple</h3>
+            Alice Gao <br>
+            555 Rue de Franchle<br>
+            France, K1J 4U6<br>
+            exemple.exemple@gmail.com<br>
+            (666)666-6666<br>
+            2 Novembre, 2023<br>
+            <br>
+            Monsieur/Madame [Teacher's Last Name],<br>
+            Enseignant(e) de Français,<br>
+            École Frenchle,<br>
+            [School Address],<br>
+            [City, Postal Code]<br>
+            <br><br>
+            <strong>Objet</strong> : Réflexion sur l'apprentissage du français de [Child's Name]
+            <br><br><br>
+            Je me permets de vous écrire suite à la discussion que j'ai eue avec [Child's Name] au sujet de son désir d'arrêter l'apprentissage du français à l'école. Je tiens tout d'abord à exprimer mon respect pour votre rôle en tant qu'enseignant(e) et à vous partager notre point de vue sur cette situation.
+            <br><br>
+            Nous croyons en l'importance de l'éducation et, en particulier, de l'apprentissage des langues étrangères dans le développement intellectuel et culturel de notre enfant. Nous sommes conscients que chaque enseignant a sa propre méthode pédagogique, mais il est primordial que l'apprentissage soit stimulant et épanouissant pour l'élève.
+            <br><br>
+            [Child's Name] nous a fait part de ses appréhensions concernant les méthodes d'enseignement. Notre préoccupation réside dans le fait que si l'approche n'encourage pas l'intérêt et la participation active des élèves, cela pourrait les détourner de l'apprentissage de la langue. Nous croyons que l'apprentissage doit être un processus collaboratif entre l'enseignant et l'élève, favorisant la compréhension, l'expression personnelle et le développement de compétences linguistiques solides.
+            <br><br>
+            Nous vous proposons donc de nous rencontrer pour discuter plus en détail de vos méthodes pédagogiques et de la manière dont nous pourrions collaborer pour rendre l'apprentissage du français plus attrayant pour [Child's Name]. Nous sommes ouverts à partager nos perspectives et à comprendre les défis que vous pourriez rencontrer en classe.
+            <br><br>
+            Nous souhaitons trouver un terrain d'entente qui puisse garantir un apprentissage enrichissant et motivant pour notre enfant. Nous croyons qu'en travaillant ensemble, nous pouvons trouver des solutions qui répondent aux besoins éducatifs de [Child's Name] tout en respectant vos contraintes pédagogiques.
+            <br><br>
+            Nous vous remercions de prendre en considération nos préoccupations et sommes impatients d'avoir l'opportunité de discuter de cette question avec vous.
+            <br><br><br>
+            Cordialement,
+            <br><br>
+            Alice Gao.
+          </p>
+        </div>
+        <br><br>
+      </div>
+    
+      <div class="tab" id="tab3">
+        <h2>Production écrite #4: Texte Argumentatif</h2>
+        <div class="content">
+          <p>
+            À votre avis, un trop grand nombre de congés scolaires a-t-il des conséquences négatives sur l’apprentissage et l’enseignement ?
+            Vous écrivez un texte construit et cohérent sur le sujet (250 mots minimum).
+            <br><br><br>
+          </p>
+        </div>
+    
+        <div class="toggleContainer" data-tab="4" onclick="toggleMarkscheme(this)">
+          <span class="arrow">&#8964;</span>
+          <span class="toggleText">Toggle Markscheme</span>
+        </div>
+      
+        <div class="markscheme" data-tab="4" style="display: none;">
+          <p>
+            <br>
+            <h3>Texte Argumentatif</h3>
+            Parmi les différentes épreuves qui composent le DELF, l'exercice de rédaction d'un texte argumentatif occupe une place importante. Ce type d'exercice vise à évaluer la capacité des candidats à exprimer clairement et de manière persuasive leur point de vue sur un sujet donné. Dans cet exercice, il est souvent nécessaire de suivre une structure précise pour garantir la cohérence et la pertinence du contenu. Dans cette optique, il est essentiel de comprendre les exigences de ce type d'exercice et d'avoir un plan solide pour guider la rédaction.
+            <br><br>
+            Un plan bien défini est la clé pour organiser efficacement un texte argumentatif. Voici quelques idées qui pourraient être intégrées dans un tel plan :
+            <br><br><br>
+            <div class="img-container">
+              <img src="images/L'ESSAI 1.jpg" alt="Description of the image">
+            </div>
+            <div class="img-container">
+              <img src="images/L'ESSAI 2.jpg" alt="Description of the image">
+            </div>
+            <div class="img-container">
+              <img src="images/L'ESSAI 3.jpg" alt="Description of the image">
+            </div>
+            <br>
+            <h3>Texte D'exemple</h3>
+            L'équilibre entre le nombre de congés scolaires et leurs conséquences sur l'apprentissage et l'enseignement est une question complexe qui suscite un débat constant. Bien que les vacances offrent aux élèves une pause bien méritée et aux enseignants une opportunité de se ressourcer, un trop grand nombre de congés peut engendrer des conséquences négatives sur le processus d'éducation.
+            <br><br>
+            Tout d'abord, les fréquentes interruptions du calendrier scolaire peuvent perturber la continuité de l'apprentissage. Les élèves peuvent avoir du mal à maintenir leur concentration et à se replonger efficacement dans leurs études après chaque période de vacances. Cette discontinuité peut freiner l'acquisition de nouvelles compétences et connaissances, laissant peu de temps pour approfondir les sujets abordés en classe.
+            <br><br>
+            De plus, un excès de congés peut entraîner un déséquilibre entre les matières. Certains domaines d'apprentissage nécessitent une pratique et une répétition régulières pour être maîtrisés, et des vacances fréquentes peuvent compromettre cette régularité. Par exemple, les matières scientifiques et linguistiques requièrent une pratique continue pour développer des compétences solides, et de longues pauses peuvent ralentir leur progression.
+            <br><br>
+            Par ailleurs, une surabondance de congés scolaires peut accentuer les inégalités éducatives. Les élèves provenant de milieux défavorisés ont souvent moins d'opportunités d'enrichissement pendant les vacances, ce qui creuse l'écart avec leurs pairs. Les élèves plus aisés peuvent avoir accès à des programmes d'apprentissage d'été ou à des ressources éducatives, tandis que d'autres risquent de perdre une partie de ce qu'ils ont appris.
+            <br><br>
+            Cependant, il est important de noter que des pauses régulières peuvent aussi avoir des avantages. Elles permettent aux élèves de recharger leurs batteries, de se consacrer à des activités extra-scolaires et de développer des compétences sociales importantes. De plus, des périodes de repos pour les enseignants peuvent contribuer à leur bien-être et à leur efficacité en classe.
+            <br><br>
+            En conclusion, un équilibre entre les périodes d'enseignement et les congés scolaires est essentiel pour maintenir la qualité de l'apprentissage. Un excès de congés peut entraîner des interruptions nuisibles, des inégalités accrues et des défis pour le suivi pédagogique. Toutefois, des pauses régulières sont nécessaires pour le bien-être des élèves et des enseignants. Il est crucial de rechercher une harmonie qui favorise l'apprentissage continu tout en permettant à chacun de profiter de moments de repos et de détente.
+            <br><br><br>
+          </p>
+        </div>
+        <br><br>
+      </div>
+    
+      <div class="tab" id="tab4">
+        <h2>Production écrite #5: Courrier des Lecteurs</h2>
+        <div class="content">
+          <p>
+            Vous avez lu dans un journal un reportage choquant sur les pratiques du service des ressources humaines d’une entreprise de luxe renommée. Cette entreprise fabrique des vêtements très chers à partir de produits bas de gamme. Vous écrivez au courrier des lecteurs du journal pour partager votre indignation et proposer des solutions.  ( 250 mots)  
+            <br><br><br>
+          </p>
+        </div>
+    
+        <div class="toggleContainer" data-tab="5" onclick="toggleMarkscheme(this)">
+          <span class="arrow">&#8964;</span>
+          <span class="toggleText">Toggle Markscheme</span>
+        </div>
+      
+        <div class="markscheme" data-tab="5" style="display: none;">
+          <p>
+            <br>
+            <h3>Courrier des Lecteurs</h3>
+            Le courrier des lecteurs est un type de sujet proposé à l’épreuve de production écrite du DELF B2. Il s’agit de réagir à un article publié dans un journal ou d’exprimer son opinion sur un sujet d’actualité en particulier. Comme il ne s’agit pas d’une lettre formelle, vous pouvez utiliser un niveau courant de vocabulaire.
+            <br><br>
+            On appelle « courrier des lecteurs » les pages d’un journal ou d’un magazine dans lesquelles sont publiées les lettres envoyées par les lecteurs qui veulent partager leur opinion ou réagir. 
+            <br><br><br>
+            <h3>Les Différentes Parties du Courrier des Lecteurs</h3>
+            <br>
+            <div class="img-container-writing-test5">
+              <img src="images/Modèle-Courrier-des-lecteurs.png" alt="Description of the image">
+            </div>
+            🔸 <strong>Le titre</strong>: Il doit être simple, clair et correspondre au thème.
+            <br><br>
+            🔸 <strong>L’introduction</strong>: Utilisez une formule d’appel comme : « bonjour à tous » ou « chers lecteurs ». Vous rappelez dans l’introduction le nom du magazine, le thème de l’article et expliquez vos motivations, c’est-à-dire pourquoi vous souhaitez réagir. Ces informations sont contenues dans la consigne du sujet.
+            <br><br>
+            🔸 <strong>Le développement</strong>: En deux ou trois parties, le développement doit correspondre à un plan clair, celui que vous avez donné dans l’introduction.
+            Chaque partie possède des arguments et des exemples. N’oubliez pas d’utiliser des connecteurs logiques pour relier vos idées.
+            <br><br>
+            🔸 <strong>La conclusion</strong>: Vous pouvez remercier les lecteurs d’avoir lu votre courrier et vous les inviter à réagir à vos propos.
+            <br><br><br><br>
+            <h3>Exemple de Courrier des Lecteurs</h3>
+            Chers lecteurs,
+            <br><br>
+            J’ai lu avec beaucoup d’intérêt votre dernier article qui parle de l’utilisation de produits bas gamme dans les vêtements de luxe de la marque LaVie. Je souhaiterais réagir car je suis choqué de voir cette marque faire la promotion sur la qualité de ses produits. Je trouve que c’est une trahison envers ses clients car LaVie donne une image engagée dans ses publicités. J’ai d’ailleurs acheté quelques vêtements chez eux parce que je voulais soutenir leur initiative.
+            <br><br>
+            Tout d’abord, il est inadmissible que LaVie puisse continuer à commercialiser ses produits à ce prix avec de telles pratiques. Je sais qu’ils ne sont pas les premiers ni les seuls à le faire, mais il faut avertir l’opinion publique. Votre article est déjà un bon début, mais on peut aller encore plus loin en créant une campagne sur internet afin d’informer le plus grand nombre. Si la population prend conscience cette escroquerie, la marque changera peut-être ses méthodes.
+            <br><br>
+            Ensuite, j’estime que les pouvoirs publics ont un rôle à jouer, notamment pour mieux protéger les consommateurs, mais aussi pour sanctionner ce genre de pratique intolérable. L’instauration d’un label qualité pourrait garantir un meilleur contrôle et une régulation plus stricte. Il existe déjà ce genre de label pour certains produits alimentaires alors pourquoi ne pas l’étendre à d’autres secteurs comme le luxe ? Je suis convaincu qu’avec une loi adaptée et en informant les gens, ces entreprises cesseront leurs abus.
+            <br><br>
+            J’espère que mon avis sera partagé par le plus grand nombre. Merci de m’avoir lu.
+            <br><br>
+            Christina Zhao. 
+            <br><br>
+          </p>
+        </div>
+        <br><br>
+      </div>
+      
+      <div class="tab" id="tab5">
+        <h2>Production écrite #6: Journal de Presse</h2>
+        <div class="content">
+          <p>
+            Le magazine de votre université en France invite ses lecteurs à contribuer sur le sujet suivant : peut-on être ami avec son professeur sur Facebook ? Vous décidez de participer en exprimant votre opinion dans un article construit et illustré d’exemples pertinents. (250 mots)
+            <br><br><br>
+          </p>
+        </div>
+    
+        <div class="toggleContainer" data-tab="6" onclick="toggleMarkscheme(this)">
+          <span class="arrow">&#8964;</span>
+          <span class="toggleText">Toggle Markscheme</span>
+        </div>
+      
+        <div class="markscheme" data-tab="6" style="display: none;">
+          <p>
+            <br>
+            <h3>Journal de Presse</h3>
+            L’article est un type de texte beaucoup moins demandé que la lettre formelle au DELF B2. Mais il peut toujours « tomber », on ne sait jamais et d’ailleurs, c’est un exercice intéressant que vous pouvez très bien rencontrer à un autre moment dans votre apprentissage du français.
+            <br><br>
+            On ne vous demandera pas d’écrire un article comme un pro, bien sûr. Mais la mise en page compte toujours à l’examen du DELF B2, alors mieux vaut respecter certaines règles. Pour plus de clarté, voyons la présentation générale d’un article sur un schéma : 
+            <br><br><br>
+            <div class="img-container-writing-test6">
+              <img src="images/mini-schema-article.png.webp" alt="Description of the image">
+            </div>
+            <br><br>
+    
+            <h3>ÊTRE AMI AVEC SON PROF SUR FACEBOOK : UNE BONNE IDÉE ?</h3>
+            <br>
+            Tu as probablement déjà croisé un professeur sur le fameux réseau social et… tu as hésité. L’inviter ou pas ? C’est risqué certes, mais une fois les précautions prises, tu vas vite en découvrir les avantages !
+            <br><br>
+            Inviter son professeur sur Facebook n’est certes pas sans risque. Le premier évidemment, est qu’il refuse ton invitation ! En effet, pour de nombreux enseignants le réseau social reste synonyme de « perte de temps ». Ils prétendront être trop occupés pour regarder tes photos de vacances…
+            <br><br>
+            Reconnais également qu’un professeur ne peut pas être un ami comme les autres. D’ailleurs, de nombreux étudiants doutent qu’il puisse avoir une vie après les cours ! Il est important pour l’enseignant de savoir garder ses distances. En effet, il joue aussi un rôle d’évaluateur qui doit se faire respecter. Il pourrait également s’inquiéter de sa sécurité, comme le montrent certains cas de harcèlement sur les réseaux.
+            <br><br>
+            Cependant, ce sont des risques qu’il n’est pas très difficile d’éviter. En effet, le terme d’« ami » sur Facebook est un peu ambigu. Il faudrait plutôt parler de « contacts » qui seront plus ou moins proches en fonction de tes préférences. Tu peux notamment paramétrer ton compte pour choisir qui peut regarder tes photos.
+            <br><br>
+            D’ailleurs, certains enseignants choisissent de créer un compte professionnel, car ils trouvent au réseau social de nombreux avantages sur le plan pédagogique. D’abord, il constitue un excellent moyen de diffuser des informations sur les cours. Ensuite, des élèves un peu timides y trouveront une solution plus rassurante pour poser des questions. Enfin, moins de formalisme dans les échanges peut améliorer par la suite l’ambiance dans la classe.
+            <br><br>
+            Alors, n’hésite plus à inviter tes enseignants sur Facebook. Si tu sais garder tes distances, tu pourras profiter pleinement de ce nouveau mode de relation pédagogique.
+            <br><br>
+            Alice GAO.
+            <br><br>
+          </p>
+        </div>
+        <br><br>
+      </div>
+    
+      <div id = 'grammar-checker'>
+        <textarea id="myTextarea" rows="10" oninput="adjustTextareaHeight(this)" placeholder="Type here and click on the button after finished..."></textarea>
+        <button type ='button' class="checker-btn" onclick="scribens_check('myTextarea', 'OJvbMnYc0t5lv8RrpQDn')">Check Grammar</button>
+      </div>
+      <br><br><br><br>
+      
+
+    <script src="app.js"></script>
+</body>
+</html>

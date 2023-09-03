@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAS PROJECT FRENCH PESTLE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/home.html" id="navbar__logo"><img src="images/CAS.png" alt="pic">FRENCHLE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/listening.html" class="navbar__links">
+                        Listening
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/reading.html" class="navbar__links">
+                        Reading
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/writing.html" class="navbar__links">
+                        Writing
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/speaking.html" class="navbar__links">
+                        Speaking
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <h1>Listening Comprehension Practices</h1>
+        <p>Here you will find a total of 6 listening comprehension practice tests.</p>
+      </div>
+    
+      <div class="img-container">
+        <img src="images/listen.jpg" alt="Description of the image">
+      </div>
+      
+      <div class="center-box">
+        <h4>General Tips for Listening Comprehension</h4>
+        <p>Here is the tips box. You will see information on this.</p>
+      </div>
+    
+      <div class="nav-bar">
+        <div class="nav-item" onclick="changeTab(0)">Test 1</div>
+        <div class="nav-item" onclick="changeTab(1)">Test 2</div>
+        <div class="nav-item" onclick="changeTab(2)">Test 3</div>
+        <div class="nav-item" onclick="changeTab(3)">Test 4</div>
+        <div class="nav-item" onclick="changeTab(4)">Test 5</div>
+        <div class="nav-item" onclick="changeTab(5)">Test 6</div>
+      </div>
+    
+      <div class="tab" id="tab0">
+        <h2>Exercise 1 - B1</h2>
+        <div class="content">
+          <audio controls src="audio/listen1.mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>Click the play button to start the exercise. Remember: You can only listen twice!</p>
+        </div>
+        
+        <hr>
+        <h2>
+          <div class="score" data-total="6"></div>
+        </h2>
+        <hr>
+    
+        <form class="quiz">
+          <div class="question" data-answer="1">
+            <p><strong>1.Qu’est-ce que Charlotte a pensé de ses vacances ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Super</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Mauvaise</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Contente</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Mauvaise</div>
+          </div>
+    
+          <div class="question" data-answer="1">
+            <p><strong>2. L’un des problèmes à l’hôtel était que :</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la chambre était trop petite.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>sa chambre n’était pas réservée.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>il n’y avait pas de salle de bain dans la chambre.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. sa chambre n’était pas réservée.</div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>3.Ce que Charlotte a aimé, c’est…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la taille de la piscine.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>la nourriture du restaurant.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>la gentillesse des autres voyageurs.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. la gentillesse des autres voyageurs.</div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>4. Le personnel de l’hôtel n’était pas…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>aimable.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>nombreux.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>expérimenté</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. expérimenté</div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>5. Qui avait organisé les vacances de Charlotte ? </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Une agence de voyages. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Paul</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Le personnel de l’hôtel</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>A. Une agence de voyages.</div>
+          </div>
+    
+          <div class="question" data-answer="1">
+            <p><strong>6. Paul est d’accord pour… </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>passer ses prochaines vacances avec Charlotte.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>aider Charlotte à organiser ses prochaines vacances.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>prêter sa maison à Charlotte pour les prochaines vacances. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. aider Charlotte à organiser ses prochaines vacances</div>
+          </div>
+    
+          <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+      </div>
+    
+      <div class="tab" id="tab1">
+        <h2>Exercise 2 - B1</h2>
+        <div class="content">
+          <audio controls src="audio/listen2.mp3">
+            Your browser does not support the audio element.
+          </audio> 
+          <p>Click the play button to start the exercise. Remember: You can only listen twice!</p>
+        </div>
+        
+        <hr>
+        <h2>
+          <div class="score" data-total="6"></div>
+        </h2>
+        <hr>
+    
+        <form class="quiz">
+          <div class="question" data-answer="1">
+            <p><strong>1. De quelle sorte de site parle le journaliste ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Des sites pour des objets luxe.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Des sites pour donner des objets.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Des sites pour trouver l'amour.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Des sites pour donner des objets.</div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>2. Quels objets recherche-t-on particulièrement pour les enfants sur ces sites ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Des electroniques. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Des vetements. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Des jouets.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. Des jouets. </div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>3. Que faut-il faire pour donner un objet sur le site Consoblog.com ? </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Il faut passer une petite annonce.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Il faut envoyer un e-mail.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Il faut donner une objet. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>A. Il faut passer une petite annonce. </div>
+          </div>
+    
+          <div class="question" data-answer="1">
+            <p><strong>4.Pour quelle raison principale donne-t-on ? </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Parce qu’on veut faire de l'argent. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Parce qu’on a envie de donner.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Parce que c'est bon pour l'environments. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Parce qu’on a envie de donner.</div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>5. Le don des objets sur Internet rencontre beaucoup de succès auprès…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>des jeunes</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>des retraités.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>des femmes au foyer. </div>
+            <div class="answer"><strong>Correct Answer: </strong>A. Des jeunes. </div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>6. La qualité du service du site Consoblog.com est garantie par…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la précision des descriptions des objets offerts.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>l’obligation de publier des photos dans les annonces.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>les notes mises par les personnes qui récupèrent les objets.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. les notes mises par les personnes qui récupèrent les objets. </div>
+          </div>
+    
+    
+          <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+      </div>
+    
+      <div class="tab" id="tab2">
+        <h2>Exercise 3 - B1</h2>
+        <div class="content">
+
+          <audio controls src="audio/listen3.mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>Click the play button to start the exercise. Remember: You can only listen twice!</p>
+
+        </div>
+        
+        <hr>
+        <h2>
+          <div class="score" data-total="8">0/1</div>
+        </h2>
+        <hr>
+    
+        <form class="quiz">
+          <div class="question" data-answer="2">
+            <p><strong>1. Cette émission vise à… </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>informer les commerçants.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>critiquer les achats en ligne. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>conseiller les consommateurs.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. Conseiller les consommateurs. </div>
+          </div>
+
+          <div class="question" data-answer="2">
+            <p><strong>2.Thierry Sagnier constate qu’Internet permet au consommateur... </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>de devenir lui-même vendeur. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>d’acheter sans perdre de temps. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de bénéficier de services gratuits.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. De bénéficier de services gratuits </div>
+          </div>
+    
+          <div class="question" data-answer="1">
+            <p><strong>3. Que pense Thierry Sagnier des commerçants qui vendent à moitié prix ?  </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils donnent une mauvaise image de la qualité des produits</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils mettent des prix trop élevés à l’origine.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Ils préfèrent vendre sans bénéfices que ne pas vendre. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Ils mettent des prix trop élevés à l’origine. </div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>4.Pourquoi, selon Thierry Sagnier, certains articles sont-ils vendus chers ?  </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Parce que les vendeurs veulent être sûrs de gagner de l’argent.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Parce que les articles sont de bonne qualité. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Parce que la production coûte cher. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>A. Parce que les vendeurs veulent être sûrs de gagner de l’argent.</div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>5. Thierry Sagnier donne un exemple de produit financé par la publicité. Lequel ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Les concerts publics</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Les films sur Internet.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Les journaux gratuits. </div>
+            <div class="answer"><strong>Correct Answer: </strong>C. Les journaux gratuits. </div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>6. Que font certains restaurants pour attirer les clients ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils augmentent la taille des portions</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils baissent leurs prix</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Ils offrent le repas aux enfants</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. Ils offrent le repas aux enfants </div>
+          </div>
+
+          <div class="question" data-answer="2">
+            <p><strong>7. Selon Thierry Sagnier, pourquoi les supermarchés offrent-ils des produits gratuits à leurs
+              clients ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Pour faire revenir les clients</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Pour vendre n’importe quoi à n’importe quel prix</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>A et B </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. A et B</div>
+          </div>
+
+          <div class="question" data-answer="1">
+            <p><strong>8. Que pense Thierry Sagnier des offres gratuites des supermarchés ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Il faut en profiter.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Il faut être prudent.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Il faut s’assurer de la qualité du produit</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Il faut être prudent </div>
+          </div>
+    
+          <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+      </div>
+    
+      <div class="tab" id="tab3">
+        <h2>Exercise 4 - B2</h2>
+        <div class="content">
+          <audio controls src="audio/listen4.mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>Click the play button to start the exercise. </p>
+        </div>
+        
+        <hr>
+        <h2>
+          <div class="score" data-total="7">0/1</div>
+        </h2>
+        <hr>
+    
+        <form class="quiz">
+          <div class="question" data-answer="1">
+            <p><strong>1. D’après le journaliste, on trouve souvent sur les réseaux sociaux des articles sur…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>l’intérêt de la course à pied.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>les avantages du sport matinal.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>le style de vie des sportifs professionnels.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Les avantages du sport matinal.  </div>
+          </div>
+
+          <div class="question" data-answer="1">
+            <p><strong>2.Selon le document, il est … de modifier notre rythme de sommeil.  </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>bénéfique </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>dangereux  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>impossible </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Dangereux de modifier notre rythme de sommeil. </div>
+          </div>
+
+          <div class="question" data-answer="1">
+            <p><strong>3.Quel rythme de vie adoptent les sportifs professionnels ?  </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils se lèvent très tôt. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils dorment beaucoup.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Ils font une sieste l’après-midi.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Ils dorment beaucoup. </div>
+          </div>
+          <div class="question" data-answer="0">
+            <p><strong>4.D’après le journaliste, les personnes qui se couchent tard sont plus … le soir. </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>actives  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>fatiguées </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>détendues </div>
+
+            <div class="answer"><strong>Correct Answer: </strong>A. Actives le soir</div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>5. Il est socialement bien vu de se lever tôt car cela permettrait d’être plus…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>efficace.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>ponctuel.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>en forme. </div>
+            <div class="answer"><strong>Correct Answer: </strong>A. Efficace.  </div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>6. Faire du sport le matin est considéré comme un luxe car…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>tous les emplois ne le permettent pas.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>la vie de famille est parfois contraignante.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>on ne peut pas toujours en faire près de chez soi.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>A. Tous les emplois ne le permettent pas. </div>
+          </div>
+
+          <div class="question" data-answer="1">
+            <p><strong>7. La pratique du sport en fin de journée est avantageuse car elle permet…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>d’être de meilleure humeur.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>de s’endormir plus facilement.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de mieux se concentrer le lendemain.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. De s’endormir plus facilement.</div>
+          </div>
+
+    
+          <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+      </div>
+    
+      <div class="tab" id="tab4">
+        <h2>Exercise 5 - B2</h2>
+        <div class="content">
+          <audio controls src="audio/listen5.mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>Click the play button to start the exercise. </p>
+        </div>
+        
+        <hr>
+        <h2>
+          <div class="score" data-total="7">0/1</div>
+        </h2>
+        <hr>
+    
+        <form class="quiz">
+          <div class="question" data-answer="1">
+            <p><strong>1.L’entreprise américaine Google a lancé l’idée d’une nouvelle… </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>forme de réunion au travail.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>manière d’utiliser les bureaux.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>organisation du travail à distance.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Manière d’utiliser les bureaux.  </div>
+          </div>
+
+          <div class="question" data-answer="1">
+            <p><strong>2.Dans l’entreprise Sanofi, la nouvelle organisation concerne…   </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>uniquement les chefs </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>les chefs et les employés.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>uniquement les employés. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Les chefs et les employés. </div>
+          </div>
+    
+      
+          <div class="question" data-answer="1">
+            <p><strong>3.Quel est l’objectif principal de cette organisation ?   </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Limiter les retards et l’absentéisme </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Améliorer l’utilisation des espaces de travail.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Créer des salles de réunion supplémentaires.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>B. Améliorer l’utilisation des espaces de travail. </div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>4. Du fait de cette organisation, les employés… </strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>rentrent parfois travailler chez eux.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>louent des espaces pour travailler tranquillement.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>organisent leurs rendez-vous à l’extérieur de l’entreprise. </div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>A. Rentrent parfois travailler chez eux</div>
+          </div>
+    
+          <div class="question" data-answer="0">
+            <p><strong>5. Chez les employés, cette organisation peut…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>entraîner des conflits.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>être source de fatigue.  </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>ediminuer la productivité. </div>
+            <div class="answer"><strong>Correct Answer: </strong>A. Entraîner des conflits.  </div>
+          </div>
+    
+          <div class="question" data-answer="2">
+            <p><strong>6.Comment les employés les plus âgés réagissent-ils à ce système ?</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils protestent et refusent de l’adopter. </div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils s’adaptent même si ça ne leur plaît pas.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>IIs s’inquiètent pour leur avenir professionnel.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. IIs s’inquiètent pour leur avenir professionnel. </div>
+          </div>
+
+          <div class="question" data-answer="2">
+            <p><strong>7. La journaliste estime que les hôtels de travail…</strong></p>
+            <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>facilitent la mise en place du travail à distance.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>renforcent les capacités d’adaptation des salariés.</div>
+            <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>favorisent la confusion entre vie privée et vie professionnelle.</div>
+    
+            <div class="answer"><strong>Correct Answer: </strong>C. Favorisent la confusion entre vie privée et vie professionnelle.</div>
+          </div>
+
+              
+          <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+      </div>
+      
+      <div class="tab" id="tab5">
+        <h2>Exercise 6 - B2</h2>
+        <div class="content">
+          <audio controls src="audio/listen6.mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>Click the play button to start the exercise. </p>
+        </div>
+        
+        <hr>
+        <h2>
+          <div class="score" data-total="6"></div>
+        </h2>
+        <hr>
+    
+        <form class="quiz">
+          <form class="quiz">
+
+            <hr>
+            <h2>
+              Document 1
+            </h2>
+            <hr>
+            <div class="question" data-answer="2">
+              <p><strong>1. Qu’est-ce qu’on constate dans l’évolution de la presse jeunesse actuellement ?</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Il y a plus de titres pour tous les âges.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Il y a plus de magazines de divertissement.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Il y a plus d’importance donnée à l’information.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. Il y a plus d’importance donnée à l’information.  </div>
+            </div>
+  
+            <div class="question" data-answer="2">
+              <p><strong>2.Selon Elsa Maudet, les nouveaux types de magazine vont … chez les jeunes.</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>encourager l’écriture </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>promouvoir la lecture   </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>favoriser la réflexion sur l’actualité </div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. Favoriser la réflexion sur l’actualité chez les jeunes.</div>
+            </div>
+
+            <hr>
+            <h2>
+              Document 2
+            </h2>
+            <hr>
+            <div class="question" data-answer="1">
+              <p><strong>1.Pour l’intervenant, les jeux de société permettent d’être…   </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>plus efficace au travail. </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>plus proche des autres.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>plus calme au quotidien.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. Plus proche des autres. </div>
+            </div>
+      
+            <div class="question" data-answer="2">
+              <p><strong>2.D’après l’intervenant, chez les plus jeunes, les jeux de société favorisent principalement… </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>leur intégration sociale.  </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>leur sensation de bien-être. </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>leur capacité de raisonnement. </div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. Leur capacité de raisonnement. </div>
+            </div>
+            
+            <hr>
+            <h2>
+              Document 3
+            </h2>
+            <hr>
+            <div class="question" data-answer="1">
+              <p><strong>1. Selon l’intervenante, un robot émotionnel est capable… </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>d’interpréter les émotions.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>de provoquer des émotions.  </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de manifester des émotions. </div>
+              <div class="answer"><strong>Correct Answer: </strong>B. Provoquer des émotions.   </div>
+            </div>
+      
+            <div class="question" data-answer="1">
+              <p><strong>2. Dans quel domaine les robots sont-ils bénéfiques pour les enfants ? </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>La mobilité.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>L’apprentissage.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">B. <span class="circle"></span>La communication.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. L’apprentissage.  </div>
+            </div>
+    
+          <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    
+        </form>
+      </div>
+      
+
+
+    <script src="app.js"></script>
+</body>
+</html>
